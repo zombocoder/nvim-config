@@ -32,6 +32,7 @@ require('lazy').setup {
   require 'plugins.copilot',
   require 'plugins.copilot-cmp',
   require 'plugins.lazygit',
+  require 'plugins.lazydocker',
 }
 
 -- The line beneath this is called `modeline`. See `:help modeline`
