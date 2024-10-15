@@ -17,7 +17,7 @@ return {
         'eslint_d', -- ts/js linter
         'shfmt', -- Shell formatter
         'checkmake', -- linter for Makefiles
-        'ruff', -- Python linter and formatter
+        'pylint', -- Python linter and formatter
       },
       automatic_installation = true,
     }

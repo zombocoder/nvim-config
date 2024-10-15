@@ -152,10 +152,10 @@ return {
     --  - settings (table): Override the default settings passed when initializing the server.
     --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
     local servers = {
-      -- clangd = {},
-      -- gopls = {},
+      clangd = {},
+      gopls = {},
       -- pyright = {},
-      -- rust_analyzer = {},
+      rust_analyzer = {},
       -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
       --
       -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -163,7 +163,7 @@ return {
       --
       -- But for many setups, the LSP (`tsserver`) will work just fine
       tsserver = {},
-      ruff = {},
+      -- ruff = {},
       pylsp = {
         settings = {
           pylsp = {
@@ -173,9 +173,9 @@ return {
               autopep8 = { enabled = false },
               yapf = { enabled = false },
               mccabe = { enabled = false },
-              pylsp_mypy = { enabled = false },
-              pylsp_black = { enabled = false },
-              pylsp_isort = { enabled = false },
+              pylsp_mypy = { enabled = true },
+              pylsp_black = { enabled = true },
+              pylsp_isort = { enabled = true },
             },
           },
         },
