@@ -76,18 +76,10 @@ For Windows, use the Neovim installation from [Neovim's official GitHub](https:/
 To set up this configuration, clone this repository into your Neovim configuration folder:
 
 ```bash
-git clone https://github.com/your-repo/nvim.git ~/.config/nvim
+git clone https://github.com/zombocoder/nvim-config.git ~/.config/nvim
 ```
 
-### 3. Install Plugin Manager
-
-This configuration uses [lazy.nvim](https://github.com/folke/lazy.nvim) as the plugin manager. Install it by running the following command:
-
-```bash
-git clone https://github.com/folke/lazy.nvim.git ~/.local/share/nvim/lazy/lazy.nvim
-```
-
-### 4. Install Plugins
+### 3. Install Plugins
 
 Once `lazy.nvim` is installed, open Neovim and run the following command to install the required plugins:
 
@@ -97,7 +89,7 @@ Once `lazy.nvim` is installed, open Neovim and run the following command to inst
 
 This will automatically sync and install all the plugins specified in your `init.lua` and `lua/plugins/` folder.
 
-### 5. Additional Setup
+### 4. Additional Setup
 
 Some plugins require additional setup:
 
@@ -110,7 +102,7 @@ Some plugins require additional setup:
 
 - **NeoTree**: NeoTree requires `nvim-web-devicons` for file icons. Make sure they are installed and configured.
 
-### 6. Keybindings
+### 5. Keybindings
 
 Custom keymaps are defined in `lua/core/keymaps.lua`. These include:
 
@@ -120,7 +112,7 @@ Custom keymaps are defined in `lua/core/keymaps.lua`. These include:
 
 Refer to the `keymaps.lua` file for a full list of key bindings.
 
-### 7. Customization
+### 6. Customization
 
 Feel free to tweak the configuration by editing the files in the `lua/` directory. Each plugin has its own configuration file in `lua/plugins/`.
 
