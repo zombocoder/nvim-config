@@ -6,9 +6,9 @@ return {
     local opts = { noremap = true, silent = true }
     -- vim.keymap.set('n', '<D-_>', require('Comment.api').toggle.linewise.current, opts)
     -- vim.keymap.set('n', '<C-c>', require('Comment.api').toggle.linewise.current, opts)
-    vim.keymap.set('n', '<D-/>', require('Comment.api').toggle.linewise.current, opts)
+    vim.keymap.set('n', '<leader>cl', require('Comment.api').toggle.linewise.current, opts)
     -- vim.keymap.set('v', '<C-_>', "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>", opts)
     -- vim.keymap.set('v', '<C-c>', "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>", opts)
-    vim.keymap.set('v', '<D-/>', "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>", opts)
+    vim.keymap.set('v', '<leader>cl', "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>", opts)
   end,
 }
