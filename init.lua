@@ -34,6 +34,7 @@ require('lazy').setup {
   require 'plugins.lazygit',
   require 'plugins.lazydocker',
   require 'plugins.claude-code',
+  require 'plugins.dap',
 }
 
 -- The line beneath this is called `modeline`. See `:help modeline`
