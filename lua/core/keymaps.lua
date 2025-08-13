@@ -73,3 +73,11 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous dia
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
 vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+
+-- Move current line up/down in NORMAL modes
+vim.keymap.set('n', '<S-Down>', ':m .+1<CR>==', { noremap = true, silent = true })
+vim.keymap.set('n', '<S-Up>', ':m .-2<CR>==', { noremap = true, silent = true })
+
+-- Move selected lines up/down in VISUAL mode
+vim.keymap.set('v', '<S-Down>', ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
+vim.keymap.set('v', '<S-Up>', ":m '<-2<CR>gv=gv", { noremap = true, silent = true })

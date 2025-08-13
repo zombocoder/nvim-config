@@ -28,6 +28,7 @@ require('lazy').setup {
   require 'plugins.alpha',
   require 'plugins.indent-blankline',
   require 'plugins.misc',
+  require 'plugins.augment',
   require 'plugins.comment',
   require 'plugins.copilot',
   require 'plugins.copilot-cmp',
